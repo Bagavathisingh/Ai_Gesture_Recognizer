@@ -50,12 +50,12 @@ def main():
 
     use_brect = True
 
-    # Camera preparation
+  
     cap = cv.VideoCapture(cap_device)
     cap.set(cv.CAP_PROP_FRAME_WIDTH, cap_width)
     cap.set(cv.CAP_PROP_FRAME_HEIGHT, cap_height)
 
-    # Model load
+  
     mp_hands = mp.solutions.hands
     hands = mp_hands.Hands(
         static_image_mode=use_static_image_mode,
@@ -66,7 +66,6 @@ def main():
 
     keypoint_classifier = KeyPointClassifier()
 
-    # Read labels
     with open('model/keypoint_classifier/keypoint_classifier_label.csv',
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
@@ -74,14 +73,14 @@ def main():
             row[0] for row in keypoint_classifier_labels
         ]
 
-    # FPS Measurement
+
     cvFpsCalc = CvFpsCalc(buffer_len=10)
 
-    # Coordinate history
+  
     history_length = 16
     point_history = deque(maxlen=history_length)
 
-    # Finger gesture history
+  
     finger_gesture_history = deque(maxlen=history_length)
 
     # 
@@ -90,7 +89,7 @@ def main():
     while True:
         fps = cvFpsCalc.get()
 
-        # Process Key (ESC: end)
+       
         key = cv.waitKey(10)
         if key == 27:  # ESC
             break
