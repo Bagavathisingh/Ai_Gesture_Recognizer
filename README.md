@@ -1,6 +1,6 @@
-# HANDSIGHT: Real-Time Hand Gesture Recognition
+# Ai_Gesture_Recognizer: Real-Time Hand Gesture Recognition
 
-HANDSIGHT is a real-time hand gesture recognition system that leverages **MediaPipe**, **OpenCV**, and a custom-trained neural network to detect and classify hand gestures. This project is designed for applications in human-computer interaction, accessibility, and more.
+Ai_Gesture_Recognizer is a real-time hand gesture recognition system that leverages **MediaPipe**, **OpenCV**, and a custom-trained neural network to detect and classify hand gestures. This project is designed for applications in human-computer interaction, accessibility, and more.
 
 ---
 
@@ -25,7 +25,7 @@ HANDSIGHT is a real-time hand gesture recognition system that leverages **MediaP
 
 ## Folder Structure
 ```
-HANDSIGHT/
+Ai_Gesture_Recognizer/
 ├── main_keypoint_app.py          # Main application for real-time gesture recognition
 ├── train_keypoint_classifier.ipynb # Jupyter Notebook for training the gesture classifier
 ├── app/
@@ -39,7 +39,6 @@ HANDSIGHT/
 │   │   └── keypoint_classifier.py
 ├── utils/
 │   ├── cvfpscalc.py             # Utility for FPS calculation
-├── LICENSE                      # License file
 └── README.md                    # Project documentation (this file)
 ```
 
@@ -76,14 +75,8 @@ This Jupyter Notebook is used to train the hand gesture classifier. It processes
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/AyushRanaDev/HANDSIGHT-HandGestureRecognition.git
-cd HANDSIGHT-HandGestureRecognition
-```
-
-### **2. Install Dependencies**
-Install the required Python libraries:
-```bash
-pip install -r requirements.txt
+git clone https://github.com/Bagavathisingh/Ai_Gesture_Recognizer.git
+cd Ai_Gesture_Recognizer
 ```
 
 ### **3. Run the Application**
@@ -104,32 +97,3 @@ jupyter notebook train_keypoint_classifier.ipynb
 - **Real-Time Recognition**: Use the application to detect and classify gestures in real-time.
 - **Training**: Train the classifier on new gestures using the provided notebook.
 - **Logging**: Log keypoints and gesture history for analysis or retraining.
-
----
-
-## Screenshots
-
-![Screenshot 2025-04-15 014345](https://github.com/user-attachments/assets/ea7b2770-b31f-4e5b-8868-0190459a7ff3)
-![Screenshot 2025-04-15 014353](https://github.com/user-attachments/assets/3dbe814f-b6ee-4458-8999-c79b446fda35)
-![Screenshot 2025-04-15 014405](https://github.com/user-attachments/assets/e4e7d7f5-2450-4bd1-a0fa-7a921c02b33b)
-![Screenshot 2025-04-15 014458](https://github.com/user-attachments/assets/7857d4cf-015e-48d3-a239-15c01f216639)
-![Screenshot 2025-04-15 014527](https://github.com/user-attachments/assets/bf1fc03e-2f13-40bb-8989-9c2fc0d6c37b)
-![Screenshot 2025-04-15 014422](https://github.com/user-attachments/assets/989adad2-6073-4229-80d2-460cb2f090c3)
-
-## Confusion Matrix
-![Screenshot 2025-04-15 015418](https://github.com/user-attachments/assets/78134de4-7d86-4e3a-881c-8f4346bc3205)
-![Screenshot 2025-04-15 015438](https://github.com/user-attachments/assets/21b96a6c-9890-4d31-8271-81b589f4b8a3)
-![Screenshot 2025-04-15 015734](https://github.com/user-attachments/assets/f082d5bf-b3d7-473c-bdca-2e4cfb5adc85)
-
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and push them to your fork.
-4. Submit a pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
