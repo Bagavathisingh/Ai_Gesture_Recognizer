@@ -66,7 +66,7 @@ def main():
 
     keypoint_classifier = KeyPointClassifier()
 
-    with open('model/keypoint_classifier/keypoint_classifier_label.csv',
+    with open('C:/Users/bugzx/OneDrive/Desktop/v0dev_codes/AiFolder/model/keypoint_classifier/keypoint_classifier_label.csv',
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [
@@ -287,16 +287,6 @@ def draw_landmarks(image, landmark_point):
                 (0, 0, 0), 6)
         cv.line(image, tuple(landmark_point[3]), tuple(landmark_point[4]),
                 (255, 255, 255), 2)
-
-
-
-
-
-
-
-
-
-
 
 
         # Index finger
